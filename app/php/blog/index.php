@@ -40,7 +40,7 @@ if (mysqli_num_rows($result) < 1) {
   while ($row = mysqli_fetch_assoc($result)) {
 
     $id = htmlentities($row['id']);
-    $title = htmlentities($row['title']);
+    $title = htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8');
     $des = htmlentities(strip_tags($row['description']));
     $slug = htmlentities($row['slug']);
     $time = htmlentities($row['date']);

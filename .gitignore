@@ -1,1 +1,4 @@
 app/Foro SQLi Efren.pdf
+terraform.exe
+infrastructure/.terraform
+terraform.tfstate*

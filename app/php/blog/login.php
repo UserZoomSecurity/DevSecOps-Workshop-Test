@@ -14,7 +14,7 @@ if (isset($_POST['log'])) {
     $row = mysqli_fetch_assoc($result);
     $row_count = mysqli_num_rows($result);
 
-
+    
     if ($row_count == 1 && password_verify($password, $row['password'])) {
         $_SESSION['username'] = $username;
         header("location: admin.php");
