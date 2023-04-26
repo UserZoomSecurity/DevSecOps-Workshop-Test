@@ -4,7 +4,7 @@ require_once 'header.php';
 require_once 'security.php';
 
 if (isset($_POST['submit'])) {
-    $title = htmlspecialchars(mysqli_real_escape_string($dbcon, $_POST['title']));#HINT
+    $title = mysqli_real_escape_string($dbcon, $_POST['title']);#HINT
     $description = mysqli_real_escape_string($dbcon, $_POST ['description']);
     $slug = slug($title);
     $date = date('Y-m-d H:i');
