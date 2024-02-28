@@ -12,5 +12,5 @@ RUNNER_ALLOW_RUNASROOT="1" ./config.sh
 sudo ./svc.sh install
 sudo ./svc.sh start
 
-hello world
+hello world!
 
