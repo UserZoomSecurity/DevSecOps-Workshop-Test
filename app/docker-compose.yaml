@@ -12,9 +12,8 @@ services:
             - "3306:3306"
         environment:
             MYSQL_DATABASE: newblog
-            MYSQL_USER:
-            MYSQL_PASSWORD:
-            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+            MYSQL_USER: trevor
+            MYSQL_PASSWORD: beckyAndrewMike1999
         volumes:
             - ./mysql:/docker-entrypoint-initdb.d
     phpmyadmin:
@@ -22,9 +21,9 @@ services:
         ports:
             - "8000:80"
         environment:
-            MYSQL_USER:
-            MYSQL_PASSWORD:
-            MYSQL_ROOT_PASSWORD:
+            MYSQL_USER: trevor
+            MYSQL_PASSWORD: beckyAndrewMike1999
+            MYSQL_ROOT_PASSWORD: beckyAndrewMike1999 
     dozzle:
         image: amir20/dozzle:latest
         volumes:
