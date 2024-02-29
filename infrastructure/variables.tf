@@ -1,5 +1,5 @@
 variable "hcloud_token" {
-  default = "" #NEVER COMMIT THIS!
+  default = "tuAFJFMQ2LmgEnCpIdJvlC68HTOhsAwOeI0MELGUjHGoVeZwPgIvtIkrcoisv7mC" #NEVER COMMIT THIS!
 }
 
 variable "location" {
